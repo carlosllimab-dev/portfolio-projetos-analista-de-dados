@@ -1,0 +1,289 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Project Details - Data Analyst Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#7f7f84",
+                        "primary": "#f8b6b2",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "primary-fixed": "#ffdad7",
+                        "error": "#ffb4ab",
+                        "on-secondary": "#2f3131",
+                        "tertiary-container": "#15161a",
+                        "inverse-primary": "#84504e",
+                        "surface-container-high": "#2a2a2a",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#b4b5b5",
+                        "surface-variant": "#353534",
+                        "outline-variant": "#514342",
+                        "background": "#131313",
+                        "tertiary-fixed": "#e3e2e7",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary-fixed-dim": "#c6c6cb",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary-fixed": "#1a1b1f",
+                        "on-surface": "#e5e2e1",
+                        "secondary": "#c6c6c7",
+                        "surface-dim": "#131313",
+                        "on-primary-fixed": "#34100f",
+                        "on-surface-variant": "#d6c2c0",
+                        "secondary-container": "#454747",
+                        "on-tertiary": "#2f3034",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface-container-highest": "#353534",
+                        "on-background": "#e5e2e1",
+                        "secondary-fixed": "#e2e2e2",
+                        "tertiary": "#c6c6cb",
+                        "primary-container": "#2d0a0a",
+                        "inverse-on-surface": "#313030",
+                        "error-container": "#93000a",
+                        "outline": "#9e8d8b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary-container": "#aa716e",
+                        "on-primary-fixed-variant": "#693a38",
+                        "surface-bright": "#393939",
+                        "surface-tint": "#f8b6b2",
+                        "on-secondary-fixed-variant": "#454747",
+                        "primary-fixed-dim": "#f8b6b2",
+                        "surface": "#131313",
+                        "on-primary": "#4e2423",
+                        "on-tertiary-fixed-variant": "#46464b",
+                        "on-error": "#690005",
+                        "surface-container": "#201f1f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "base": "8px",
+                        "container-padding": "24px",
+                        "grid-gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-code": ["JetBrains Mono"],
+                        "headline-lg": ["Manrope"],
+                        "body-sm": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-xl": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-code": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-sm": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex">
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-0 h-full w-64 rounded-r-xl bg-surface-container-low/50 backdrop-blur-2xl border-r border-white/5 shadow-xl hidden lg:flex flex-col p-6 gap-4 z-40">
+<div class="mb-8">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Project Detail</h1>
+<p class="font-label-code text-label-code text-secondary mt-1">Insight Explorer</p>
+</div>
+<ul class="flex flex-col gap-2 flex-grow">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 bg-primary-container text-on-primary-container rounded-lg font-bold transition-all duration-200 ease-in-out hover:bg-white/5" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-label-code text-label-code">Overview</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-secondary-fixed-dim hover:bg-surface-variant/30 rounded-lg transition-all duration-200 ease-in-out hover:bg-white/5" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-label-code text-label-code">Analysis</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-secondary-fixed-dim hover:bg-surface-variant/30 rounded-lg transition-all duration-200 ease-in-out hover:bg-white/5" href="#">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="font-label-code text-label-code">Technical Stack</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-secondary-fixed-dim hover:bg-surface-variant/30 rounded-lg transition-all duration-200 ease-in-out hover:bg-white/5" href="#">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="font-label-code text-label-code">Key Features</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-secondary-fixed-dim hover:bg-surface-variant/30 rounded-lg transition-all duration-200 ease-in-out hover:bg-white/5" href="#">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+<span class="font-label-code text-label-code">Next Project</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto">
+<button class="w-full py-3 px-4 rounded-full bg-primary-container text-on-primary-container font-label-code text-label-code hover:bg-primary hover:text-on-primary transition-colors duration-300">Hire Me</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow lg:ml-64 p-container-padding lg:p-[48px] max-w-[1200px] mx-auto w-full">
+<!-- Breadcrumb -->
+<div class="flex items-center gap-2 font-label-code text-label-code text-secondary mb-8">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary">Portfolio Details</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter">
+<!-- Left Column: Gallery & Tags -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Main Image -->
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high border border-white/10 shadow-xl group">
+<img class="w-full h-full object-cover" data-alt="A striking digital presentation of a financial dashboard interface shown on a sleek dark-mode display, angled slightly to show depth. The dashboard features vibrant neon pink and teal charts against a deep charcoal background. High-quality lighting emphasizes the crisp lines and data visualization elements. Modern tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Gdrd-AAe3u8mnTPMUA_Cc7RDPRcVcuv6CkzUy3l1TkMiV7nzAY3BIHYhuACY28-VWmr7PbGhh4FGHdLXUGzj-a71AOWotZX1Nep9pxfTpEelRGyK_kU0AjA2e1JY167dl11yfyCry02Qvqm5f9bsCPFZOi0WeAd-HKqc9cBhzz2VbIFUvnmlYRZsKCtP4MaCdurYXCcUQMhNWgyqsrXIfBprjZJK94rXzrQCKlgEAsznsBn0LkH-">
+<!-- Carousel Controls -->
+<button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface-container/80 backdrop-blur-md flex items-center justify-center text-primary border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-surface-container-highest">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface-container/80 backdrop-blur-md flex items-center justify-center text-primary border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-surface-container-highest">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<!-- Thumbnails -->
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-video rounded-lg overflow-hidden bg-surface-container-high border-2 border-primary cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="A close-up digital view of a mobile layout for a financial app, showing dark mode styling with pink accents on the data graphs. Sleek, minimal, modern UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtyuQVxbM6WXWvvR8UyN6h1o6vG8GrkEL7X6YZj8yoOxf0DJ7dW8z1pFit4nNNuVbcslgVmeWPJlNVTuLDEvJA1MJARwm2WKEiRB8vsb6ki8d9cnDr-i7d0DYIIxwde2tiwzvUr2TpEHhw7lBU8I59XpwQnvjrQZRYCMk79bNBqAbrxjmKkVICzNcr7gbnRAJaAmsf0Y69h3ZVW_76sxPvHU4C-Fli6Czo7M8_vmiHF46eopqVffu_">
+</div>
+<div class="aspect-video rounded-lg overflow-hidden bg-surface-container-high border border-white/10 cursor-pointer hover:border-white/30 transition-colors">
+<img class="w-full h-full object-cover" data-alt="Another view of the financial dashboard highlighting the interactive data tables and filtering options. Deep dark background with sharp, clean typography and neon highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCErH0aN3IfVRt4v_5mqXWfytZW0Ded1l1DwiX95LtykGpZRjvIhWmbjqpcjV5aylXCRWYkpecZwY4b65dYMDv3lQJmjv3nnjj1gk10sHhQ-qHoyL92pvLJt1q9ib_GqRy2IWaLDCoOl5tPIAgP0FhNw12XG-p2u65QPa2MvFeAYfengGAugfd28MJ-O1bBg6kgZTEmMgKw6H7FVZsAyxm3gAraUxEQLCZg4puJM14C8axLzHXpOtiz">
+</div>
+<div class="aspect-video rounded-lg overflow-hidden bg-surface-container-high border border-white/10 cursor-pointer hover:border-white/30 transition-colors">
+<img class="w-full h-full object-cover" data-alt="A perspective mockup of a tablet displaying the analytics dashboard. The surrounding environment is dark and moody, reflecting the sleek nature of the interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaNH0E11jRDysQO7e2r2Xcw9ZAkBmLJ-gXtGi7_C-mWx_kywesUh7EtmGVJxdivyK-2U0wXlALeRMJJbZkhL1yH5FAN5xK_IWoM75-kWyj0GQH3WPUwsjXTf0MNGciFQdTHL8sKupCQKeytebdavpVd_SpacwHACXuqFSVHaRSDyr2OOXaG3yBT-Z8LmuxRtQx_ZGQb0804Qks2AQpPiEQGV5QfJCyRU7wCD1zNOm9sPwOrUKKkCej">
+</div>
+<div class="aspect-video rounded-lg overflow-hidden bg-surface-container-high border border-white/10 cursor-pointer hover:border-white/30 transition-colors">
+<img class="w-full h-full object-cover" data-alt="Detail shot focusing on a specific data visualization component like a heat map or scatter plot within the dark mode financial app. High contrast, technical feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbTUvK_3ksJs2VSaeFbpwQ9BjPJYJsqUn_MhxUywd_h_lFK22RUJtpnzCMTIfPUu1Mm2G0vAG2iFyoQeEWoGQA4YcGqEOgIkemrxoKNNhdEWlWSpC4mouugAHKUG_cBtRHUUdx9qBsax2UqQTtdgPolR9PjiYfWzzbDgCXy4DzGMoePCBMTYxsJWbqADoDqkV_O9-WQGzfYRElvEXUEIh8rFgKe7SbMUue430oTqveBe0S3rz9wzI_">
+</div>
+</div>
+<!-- Tech Stack Tags -->
+<div class="flex flex-wrap gap-2 mt-4">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-code text-label-code border border-white/5">Angular</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-code text-label-code border border-white/5">Express.js</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-code text-label-code border border-white/5">PostgreSQL</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-code text-label-code border border-white/5">GraphQL</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-code text-label-code border border-white/5">Firebase</span>
+</div>
+</div>
+<!-- Right Column: Details & Content -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Header Info -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between flex-wrap gap-4">
+<span class="px-3 py-1 rounded-full bg-primary-container/30 text-primary font-label-code text-label-code border border-primary/20">UX/UI Design</span>
+<div class="flex items-center gap-4 text-secondary font-label-code text-label-code">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_month</span> September 2024</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">domain</span> DigitalCraft Solutions</span>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg lg:text-[48px] text-primary leading-tight">Innovative Financial Dashboard App</h2>
+<a class="flex items-center gap-2 text-secondary hover:text-primary transition-colors font-label-code text-label-code w-fit" href="#">
+<span class="material-symbols-outlined text-sm">link</span>
+                        projectwebsite.example.com
+                    </a>
+</div>
+<!-- Description -->
+<p class="text-on-surface-variant font-body-md">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
+                </p>
+<!-- Accordions -->
+<div class="flex flex-col gap-3">
+<!-- Expanded Accordion -->
+<div class="rounded-xl bg-surface-container-low border border-white/10 overflow-hidden">
+<button class="w-full flex items-center justify-between p-4 bg-surface-container text-primary font-label-code text-label-code">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">article</span>
+                                Project Overview
+                            </span>
+<span class="material-symbols-outlined">expand_less</span>
+</button>
+<div class="p-4 text-on-surface-variant font-body-sm border-t border-white/5">
+                            Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                        </div>
+</div>
+<!-- Collapsed Accordions -->
+<div class="rounded-xl bg-surface-container-low border border-white/5 hover:border-white/20 transition-colors">
+<button class="w-full flex items-center justify-between p-4 text-secondary hover:text-on-surface font-label-code text-label-code transition-colors">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">report_problem</span>
+                                The Challenge
+                            </span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+<div class="rounded-xl bg-surface-container-low border border-white/5 hover:border-white/20 transition-colors">
+<button class="w-full flex items-center justify-between p-4 text-secondary hover:text-on-surface font-label-code text-label-code transition-colors">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">lightbulb</span>
+                                The Solution
+                            </span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Key Features -->
+<div class="flex flex-col gap-4 mt-4">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary flex items-center gap-2 text-2xl">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+                        Key Features
+                    </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 text-on-surface-variant font-body-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>Real-time Data Visualization</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>Customizable Dashboards</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>User Role Management</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>Data Export Options</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>Secure Authentication</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>Multi-device Support</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-wrap items-center gap-4 mt-8 pt-8 border-t border-white/10">
+<button class="px-8 py-3 rounded-full bg-primary-container text-white font-label-code text-label-code hover:bg-inverse-primary transition-colors shadow-lg">
+                        View Live Project
+                    </button>
+<button class="px-8 py-3 rounded-full border border-white/20 text-secondary font-label-code text-label-code hover:text-white hover:border-white transition-colors flex items-center gap-2">
+                        Next Project
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</body></html>
