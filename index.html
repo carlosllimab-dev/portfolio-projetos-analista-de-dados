@@ -1,0 +1,342 @@
+<!DOCTYPE html><html class="dark" lang="en" 
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Alexander Chen - Data Analyst Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&amp;family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#1c1b1b",
+                      "error": "#ffb4ab",
+                      "secondary": "#c6c6c7",
+                      "tertiary-fixed-dim": "#c6c6cb",
+                      "on-tertiary-fixed": "#1a1b1f",
+                      "secondary-fixed": "#e2e2e2",
+                      "surface": "#131313",
+                      "surface-dim": "#131313",
+                      "tertiary": "#c6c6cb",
+                      "on-tertiary-fixed-variant": "#46464b",
+                      "surface-tint": "#f8b6b2",
+                      "on-primary-fixed-variant": "#693a38",
+                      "surface-container-lowest": "#0e0e0e",
+                      "primary": "#f8b6b2",
+                      "primary-fixed": "#ffdad7",
+                      "on-surface": "#e5e2e1",
+                      "surface-container": "#201f1f",
+                      "on-surface-variant": "#d6c2c0",
+                      "primary-container": "#2d0a0a",
+                      "on-secondary": "#2f3131",
+                      "on-background": "#e5e2e1",
+                      "background": "#131313",
+                      "tertiary-container": "#15161a",
+                      "on-tertiary-container": "#7f7f84",
+                      "on-tertiary": "#2f3034",
+                      "outline": "#9e8d8b",
+                      "surface-container-highest": "#353534",
+                      "on-primary-fixed": "#34100f",
+                      "outline-variant": "#514342",
+                      "surface-container-high": "#2a2a2a",
+                      "inverse-primary": "#84504e",
+                      "secondary-fixed-dim": "#c6c6c7",
+                      "on-secondary-fixed-variant": "#454747",
+                      "primary-fixed-dim": "#f8b6b2",
+                      "surface-bright": "#393939",
+                      "inverse-on-surface": "#313030",
+                      "error-container": "#93000a",
+                      "inverse-surface": "#e5e2e1",
+                      "tertiary-fixed": "#e3e2e7",
+                      "on-primary-container": "#aa716e",
+                      "on-error": "#690005",
+                      "secondary-container": "#454747",
+                      "on-secondary-container": "#b4b5b5",
+                      "on-error-container": "#ffdad6",
+                      "surface-variant": "#353534",
+                      "on-secondary-fixed": "#1a1c1c",
+                      "on-primary": "#4e2423"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "base": "8px",
+                      "grid-gutter": "24px",
+                      "container-padding": "24px"
+              },
+              "fontFamily": {
+                      "body-sm": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "label-code": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-xl": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "body-sm": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-code": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary/30 selection:text-primary-fixed min-h-screen flex">
+<!-- SideNavBar (Shared Component) -->
+<nav class="hidden md:flex fixed h-[calc(100vh-48px)] w-64 left-6 top-6 rounded-xl bg-surface-container/60 dark:bg-surface-container/60 backdrop-blur-3xl border border-white/10 shadow-2xl flex-col p-6 gap-y-4 z-50">
+<div class="mb-8 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-white/10 shrink-0">
+<img alt="Data Analyst Profile Picture" class="w-full h-full object-cover" data-alt="A small, professional headshot of a data analyst, facing forward with a neutral expression. Studio lighting, dark mode aesthetic, deep charcoal background, subtle rim light. Minimalist and corporate styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD15IX6XRmFlE5h3Gv9eBR9s7Q_byoX351XBiDLorFmc91mAs1vabnE9OHXVYVBm3hKoUqDMYzjQEiRDM4jhiy99YqMgKQM-t09c-1wtcSKayUW1kHaXD7LRo2LMQnVInHIX3fpZTn7u3a9azBdQHhsr54llke4gJTMEWK_t6F5fDrk2Lrdx-xdq2edbZypjwQIz8POqdQRDtWK_irgOqR6M4p57C6pCbSEaxBIOMUxuaNFfrJf7n98Cd9Eo2j0ANMs175YCOZY7SK5Ng">
+</div>
+<div>
+<h2 class="font-headline-lg-mobile text-body-sm font-bold text-on-surface dark:text-on-surface leading-tight">Analista de Dados</h2>
+
+</div>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<!-- Active Tab: Home -->
+<!-- Inactive Tabs -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-300 rounded-lg group" href="#"><span class="material-symbols-outlined shrink-0" data-icon="person">person</span><span class="font-body-sm text-body-sm">Sobre</span></a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-300 rounded-lg group" href="#">
+<span class="material-symbols-outlined shrink-0" data-icon="analytics">analytics</span>
+<span class="font-body-sm text-body-sm">Portfólio</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-300 rounded-lg group" href="#">
+<span class="material-symbols-outlined shrink-0" data-icon="terminal">terminal</span>
+<span class="font-body-sm text-body-sm">Habilidades</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-300 rounded-lg group" href="#">
+<span class="material-symbols-outlined shrink-0" data-icon="mail">mail</span>
+<span class="font-body-sm text-body-sm">Contato</span>
+</a>
+</div>
+<div class="mt-auto flex flex-col gap-4 border-t border-white/10 pt-4">
+
+
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-0 md:ml-[300px] flex flex-col min-h-screen relative w-full overflow-x-hidden">
+<!-- Ambient Background Glow -->
+<div class="absolute top-0 left-1/4 w-[800px] h-[800px] bg-primary-container/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+<div class="w-full max-w-7xl mx-auto px-container-padding py-12 md:py-24 flex-grow flex flex-col gap-section-gap">
+<!-- Hero Section -->
+<section class="w-full flex flex-col items-center justify-center py-20 px-4 rounded-[32px] bg-background relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/60 via-background to-background -z-10"></div>
+<!-- Profile Picture -->
+<div class="w-24 h-24 rounded-full overflow-hidden mb-8 border-4 border-surface-container/50 shadow-xl">
+<img alt="Daniel Mercer" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT3eyBB590LXa8K8wCsTt3SRHNCvKnOKeau9fbn9JS8agwUOqwf5Gwc1wtqxdNrhkgz1GACvDmqhX8YuQ1z7mZBruyKicICCBuyOdqnpzk4RHI_5hzI9zu76teqGOMNmG8Zk5zlMA-CAZ_uX-GeyZ2OzjwOe0ywGgSrqkoDAFH3ZRPDHQMFleFzmjX_Xoi3nmQioDdikSRg5hL2BouP2dwIK07cW_hOdFf_CUmcgRjl608Eggl_4BifsZNs4uuItUIGKZBCi3ZrXrmhw">
+</div>
+<!-- Availability Badge -->
+
+<!-- Headline -->
+<h1 class="font-headline-xl text-[40px] md:text-[56px] text-center text-on-surface max-w-4xl leading-[1.1] mb-8 font-bold">Olá, eu sou Carlos Leandro</h1>
+<!-- Subtitle -->
+<p class="font-body-md text-on-surface-variant max-w-2xl mb-12 text-[18px] leading-relaxed text-justify">Seja Bem-vindo(a) ao meu Portfólio com projetos de dados para diferentes setores, desenvolvidos com ferramentas e tecnologias modernas.<br><br>Aqui você vai encontrar meus projetos de dados que mostram minha experiência e domínio em construir soluçöes de mercado para diversas áreas e setores, com o objetivo de gerar valor em dados.&nbsp;</p>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 mb-14">
+<button class="px-8 py-3.5 bg-primary text-on-primary rounded-full font-body-sm font-bold hover:bg-primary-fixed transition-all hover:scale-105 shadow-lg shadow-primary/20">Ver Projetos</button>
+<button class="px-8 py-3.5 bg-surface-container/50 border border-white/10 text-on-surface rounded-full font-body-sm font-bold hover:bg-surface-container hover:border-white/20 transition-all flex items-center gap-2">Currículo
+</button>
+</div>
+<!-- Social Links -->
+<div class="flex items-center gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container/50 border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/30 transition-colors" href="#">
+<span class="font-body-sm text-sm font-bold">𝕏</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container/50 border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/30 transition-colors" href="#">
+<span class="font-body-sm text-sm font-bold">Be</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container/50 border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/30 transition-colors" href="#">
+<span class="font-body-sm text-sm font-bold">in</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container/50 border border-white/10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/30 transition-colors" href="#">
+<span class="font-body-sm text-sm font-bold">gh</span>
+</a>
+</div>
+</section>
+<!-- Featured Projects Section -->
+<section class="w-full py-20 px-container-padding flex flex-col items-center bg-background" id="about">
+<div class="max-w-4xl w-full flex flex-col items-center text-center gap-6">
+<div class="flex flex-col gap-2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Sobre Mim</h2>
+<p class="font-body-md text-on-surface-variant opacity-80">Uma breve história, moldada por novos desafios e marcos.</p>
+</div>
+<div class="mt-8">
+<p class="font-body-md text-on-surface text-[20px] leading-relaxed max-w-3xl" style="text-align: justify;">Engenheiro Mecânico em transiçäo para Dados, com vivência anterior na área de produçäo como soldador, onde organizaçäo, eficiência e cumprimento de prazos säo a base para o fluxo operacional. Na rotina operacional ,transformava aço&nbsp; e aluminio em chassis completos, por meio do processo de soldagem MIG.<br>Vindo da produçäo pude desenvolver uma visäo aguçada sobre fluxo de trabalho,cumprimento de prazos e a importância de antecipar gargalos para evitar desperdícios. Estar na linha de frente me gerou insights sobre como o planejamento impacta o resultado final e a entrega ao cliente.<br><br>Estou na busca de oportunidade como analista de Dados ou analista de BI, onde possa unir raciocínio analítico, visäo de negócio e habilidades técnicas para gerar valor real.</p>
+</div>
+</div>
+</section><section class="flex flex-col gap-8" id="resume">
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Currículo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Trajetória profissional e competências técnicas.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter">
+<!-- Left Column: Personal Info & Skills -->
+<!-- Right Column: Experience, Education, Certifications -->
+<div class="lg:col-span-8 flex flex-col gap-10">
+<!-- Experience -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">work</span>
+<h4 class="font-headline-lg text-[24px] font-bold text-on-surface">Experiência Profissional</h4>
+</div>
+<div class="flex flex-col gap-8 border-l-2 border-surface-container-high ml-3 pl-6">
+<div class="relative">
+<div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
+<h5 class="font-body-md font-bold text-on-surface">Soldador</h5>
+<p class="font-label-code text-[12px] text-primary mb-2">Agosto 2017&nbsp; - Agosto 2024 | Moto Honda da Amazônia</p>
+<ul class="list-disc list-inside font-body-sm text-on-surface-variant flex flex-col gap-1">
+<li class="">Atuação como soldador MIG; Realização de cordões de solda</li>
+
+
+
+</ul>
+</div>
+<div class="relative">
+<div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-surface-container-high border-4 border-background"></div>
+<h5 class="font-body-md font-bold text-on-surface">Jovem Aprendiz</h5>
+<p class="font-label-code text-[12px] text-primary mb-2">Agosto 2015 - Agosto 2017 | Moto Honda da Amazônia</p>
+<ul class="list-disc list-inside font-body-sm text-on-surface-variant flex flex-col gap-1">
+<li class="">Principais atividades: Acompanhamento de documentos relacionados a ISO 9001, revisão de documentos da qualidade e relatórios, leitura e interpretação de desenho técnico mecânico.<br class=""><br class=""><strong class="">Ferramentas:</strong> Excel</li>
+
+
+
+</ul>
+</div>
+</div>
+</div>
+<!-- Education -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">school</span>
+<h4 class="font-headline-lg text-[24px] font-bold text-on-surface">Education</h4>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container/20 p-6 rounded-2xl border border-white/5">
+<h5 class="font-body-md font-bold text-on-surface">Bacharelado em Engenharia Mecânica</h5>
+<p class="font-label-code text-[12px] text-primary">2019 - 2023</p>
+<p class="font-body-sm text-on-surface-variant mt-2">Faculdade Martha Falcäo Wyden</p>
+</div>
+<div class="bg-surface-container/20 p-6 rounded-2xl border border-white/5">
+<h5 class="font-body-md font-bold text-on-surface">Ensino Técnico em Automaçäo Industrial</h5>
+<p class="font-label-code text-[12px] text-primary">2014 - 2019</p>
+<p class="font-body-sm text-on-surface-variant mt-2">Fucapi</p>
+</div>
+</div>
+</div>
+<!-- Certifications -->
+
+</div>
+</div>
+</section><section class="flex flex-col gap-16 py-20" id="ferramentas"><div class="flex flex-col items-center gap-4 text-center"><h3 class="font-headline-lg text-[32px] md:text-[40px] font-bold text-on-surface">Ferramentas &amp; Tecnologia</h3><div class="h-1 w-16 bg-primary rounded-full"></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16"><div class="flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-white/10 pb-8 lg:pb-0 lg:pr-8 last:border-0"><div class="flex items-baseline gap-3"><span class="font-label-code text-[14px] text-on-surface-variant opacity-60">01</span><h4 class="font-headline-lg text-[22px] font-bold text-on-surface">SQL &amp; Banco de Dados</h4></div><p class="font-body-md text-on-surface-variant leading-relaxed">Modelagem e consulta de dados complexos com precisão.</p><div class="flex items-center gap-4 mt-auto pt-4"><a class="inline-flex items-center gap-2 font-body-sm font-bold text-primary hover:text-primary-fixed transition-colors" href="#">Saiba mais <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></div><div class="flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-white/10 pb-8 lg:pb-0 lg:pr-8 last:border-0"><div class="flex items-baseline gap-3"><span class="font-label-code text-[14px] text-on-surface-variant opacity-60">02</span><h4 class="font-headline-lg text-[22px] font-bold text-on-surface">Visualização de Dados</h4></div><p class="font-body-md text-on-surface-variant leading-relaxed">Dashboards interativos que contam histórias claras.</p><div class="flex items-center gap-4 mt-auto pt-4"><span class="text-[12px] font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">Mais Popular</span><a class="inline-flex items-center gap-2 font-body-sm font-bold text-primary hover:text-primary-fixed transition-colors" href="#">Saiba mais <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></div><div class="flex flex-col gap-4 border-b lg:border-b-0 border-white/10 pb-8 lg:pb-0 last:border-0"><div class="flex items-baseline gap-3"><span class="font-label-code text-[14px] text-on-surface-variant opacity-60">03</span><h4 class="font-headline-lg text-[22px] font-bold text-on-surface">Engenharia de Dados</h4></div><p class="font-body-md text-on-surface-variant leading-relaxed">Pipelines de dados robustos e escaláveis.</p><div class="flex items-center gap-4 mt-auto pt-4"><a class="inline-flex items-center gap-2 font-body-sm font-bold text-primary hover:text-primary-fixed transition-colors" href="#">Saiba mais <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></div><div class="flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-white/10 pb-8 lg:pb-0 lg:pr-8 last:border-0 lg:pt-8 lg:border-t"><div class="flex items-baseline gap-3"><span class="font-label-code text-[14px] text-on-surface-variant opacity-60">04</span><h4 class="font-headline-lg text-[22px] font-bold text-on-surface">Machine Learning</h4></div><p class="font-body-md text-on-surface-variant leading-relaxed">Modelos preditivos para decisões baseadas em dados.</p><div class="flex items-center gap-4 mt-auto pt-4"><a class="inline-flex items-center gap-2 font-body-sm font-bold text-primary hover:text-primary-fixed transition-colors" href="#">Saiba mais <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></div><div class="flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-white/10 pb-8 lg:pb-0 lg:pr-8 last:border-0 lg:pt-8 lg:border-t"><div class="flex items-baseline gap-3"><span class="font-label-code text-[14px] text-on-surface-variant opacity-60">05</span><h4 class="font-headline-lg text-[22px] font-bold text-on-surface">Estatística Aplicada</h4></div><p class="font-body-md text-on-surface-variant leading-relaxed">Análise rigorosa para insights profundos.</p><div class="flex items-center gap-4 mt-auto pt-4"><a class="inline-flex items-center gap-2 font-body-sm font-bold text-primary hover:text-primary-fixed transition-colors" href="#">Saiba mais <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></div><div class="flex flex-col gap-4 pb-8 lg:pb-0 last:border-0 lg:pt-8 lg:border-t border-white/10"><div class="flex items-baseline gap-3"><span class="font-label-code text-[14px] text-on-surface-variant opacity-60">06</span><h4 class="font-headline-lg text-[22px] font-bold text-on-surface">Cloud Computing</h4></div><p class="font-body-md text-on-surface-variant leading-relaxed">Soluções em nuvem para infraestrutura de dados.</p><div class="flex items-center gap-4 mt-auto pt-4"><a class="inline-flex items-center gap-2 font-body-sm font-bold text-primary hover:text-primary-fixed transition-colors" href="#">Saiba mais <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></div></div></section><section class="flex flex-col gap-8 py-12" id="stack-tecnologica"><div class="flex flex-col gap-2"><h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Stack Tecnológica</h3><div class="h-1 w-16 bg-primary rounded-full"></div></div><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-8"><div class="flex flex-col items-center justify-center p-6 bg-surface-container/20 border border-white/5 rounded-2xl hover:bg-surface-container/40 transition-all group"><span class="material-symbols-outlined text-[40px] text-on-surface-variant group-hover:text-primary transition-colors">code</span><span class="font-label-code text-sm mt-3 text-on-surface-variant">Python</span></div><div class="flex flex-col items-center justify-center p-6 bg-surface-container/20 border border-white/5 rounded-2xl hover:bg-surface-container/40 transition-all group"><span class="material-symbols-outlined text-[40px] text-on-surface-variant group-hover:text-primary transition-colors">database</span><span class="font-label-code text-sm mt-3 text-on-surface-variant">SQL</span></div><div class="flex flex-col items-center justify-center p-6 bg-surface-container/20 border border-white/5 rounded-2xl hover:bg-surface-container/40 transition-all group"><span class="material-symbols-outlined text-[40px] text-on-surface-variant group-hover:text-primary transition-colors">bar_chart</span><span class="font-label-code text-sm mt-3 text-on-surface-variant">Power BI</span></div><div class="flex flex-col items-center justify-center p-6 bg-surface-container/20 border border-white/5 rounded-2xl hover:bg-surface-container/40 transition-all group"><span class="material-symbols-outlined text-[40px] text-on-surface-variant group-hover:text-primary transition-colors">pie_chart</span><span class="font-label-code text-sm mt-3 text-on-surface-variant">Tableau</span></div><div class="flex flex-col items-center justify-center p-6 bg-surface-container/20 border border-white/5 rounded-2xl hover:bg-surface-container/40 transition-all group"><span class="material-symbols-outlined text-[40px] text-on-surface-variant group-hover:text-primary transition-colors">table_view</span><span class="font-label-code text-sm mt-3 text-on-surface-variant">Excel</span></div><div class="flex flex-col items-center justify-center p-6 bg-surface-container/20 border border-white/5 rounded-2xl hover:bg-surface-container/40 transition-all group"><span class="material-symbols-outlined text-[40px] text-on-surface-variant group-hover:text-primary transition-colors">cloud</span><span class="font-label-code text-sm mt-3 text-on-surface-variant">AWS</span></div></div></section><section class="flex flex-col gap-8" id="projects">
+<div class="flex flex-col gap-2"><h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface text-center">Portfólio</h3><p class="font-body-md text-body-md text-on-surface-variant text-center max-w-2xl mx-auto">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter"><div class="group bg-surface-container/40 border border-white/10 rounded-xl overflow-hidden hover:bg-surface-container/60 transition-all"><div class="aspect-[4/3] overflow-hidden"><img alt="Business Growth Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkqbmhKrHP9EMvTaL5mDgRUybycfwEX70y6xAFNvjAG6ARu3UgKOdJaEY1qWXqWzFS9ybmK4ysRDNP183eOT1eJ1wc9ma8rQ3nuAYsdY0AYfiuereJeuujG9RNGwAaPSlnXWTus-9nKF64-qY1LQcrrpTNLMLVrYfo3HJwpfExRcLIsq69HsYKVItDhBfPF8CncQgr_Qk4lDLfHE3hT-fvqDcPe5240JL7xuF5CG-UJrWXVCAwNtYm"></div><div class="p-6 flex flex-col gap-2"><h4 class="font-bold text-on-surface">Business Growth Strategy</h4><p class="text-sm text-on-surface-variant">Strategic Planning</p><div class="flex gap-2 mt-2"><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Strategy</span><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Consulting</span></div></div></div><div class="group bg-surface-container/40 border border-white/10 rounded-xl overflow-hidden hover:bg-surface-container/60 transition-all"><div class="aspect-[4/3] overflow-hidden"><img alt="Financial Restructuring" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs4Qq61Nz1pTRLVJOqvfwbIt2LoX5XhdMH_TyxjL9je809-l6vy75GK-KTWUJEKyaO2lYubPPk-0jMmorUOO3EiA1WKrAtIzEybpgzrO_JQd5uXP_MVZ9y29Hoo-UK6jzl-4mMREd44VF3ASkmXhkUF7DXsSxJGbcS5lITEOBJGojd_NCkwGZWdFrLVNCk3r7HjGFjlc14N_3X-dHR5Zi4-Eg0qnOugrA-Omv6lj9MOEXO7dZ9KR2o"></div><div class="p-6 flex flex-col gap-2"><h4 class="font-bold text-on-surface">Financial Restructuring</h4><p class="text-sm text-on-surface-variant">Financial Advisory</p><div class="flex gap-2 mt-2"><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Finance</span><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Investment</span></div></div></div><div class="group bg-surface-container/40 border border-white/10 rounded-xl overflow-hidden hover:bg-surface-container/60 transition-all"><div class="aspect-[4/3] overflow-hidden"><img alt="Supply Chain Optimization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApLHbVKXR5uZ7Tdfr1WEHdGw5ZlbWBtibZmWn7C4tA8FpirNuT1KyefmwpGBvf3QBjfQY_5oFrOVjkkHomEt5dYIUbNRomdN8npwLjyP4pLA9yQloGwLl2R2PwW6FdRi1WtkqYV2-jYKQ0mafI5AQttmTE-PhWF96mYgPJLN79LeX4PD5jWcZsLieCqy_t0-RpuL_biJHbW1EqhnahHULh0LPjPfJQwDidGKdkKbTSyNqm2f3ZdsHS"></div><div class="p-6 flex flex-col gap-2"><h4 class="font-bold text-on-surface">Supply Chain Optimization</h4><p class="text-sm text-on-surface-variant">Operations Management</p><div class="flex gap-2 mt-2"><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Operations</span><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Logistics</span></div></div></div><div class="group bg-surface-container/40 border border-white/10 rounded-xl overflow-hidden hover:bg-surface-container/60 transition-all"><div class="aspect-[4/3] overflow-hidden"><img alt="Digital Transformation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEAcpuaqIx_HUGB2HBYI3ksYL9BrTL2OKKTQdYKHww1hq2ad1cEeSz9DeLpV-EwiqlCgRbTS1jj_B8FNtFtKm6v8P0TM0NczWeTJDLPAeGUqkcGSO5etZQBJy02kJ8pcoe2eimCWakIKEDOtVee4iRBWpRgvJ-Bkj19NMT_cFXV_dG6e5vDVq2Qb-ebP8pApsHDo7oxKjvIVtJrF78DkpBNe3JN_GZJaILdcgBnG7c0Nqu3lJotYsy"></div><div class="p-6 flex flex-col gap-2"><h4 class="font-bold text-on-surface">Digital Transformation</h4><p class="text-sm text-on-surface-variant">Technology Consulting</p><div class="flex gap-2 mt-2"><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Technology</span><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Innovation</span></div></div></div><div class="group bg-surface-container/40 border border-white/10 rounded-xl overflow-hidden hover:bg-surface-container/60 transition-all"><div class="aspect-[4/3] overflow-hidden"><img alt="Market Expansion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNBPXQGeUdqlzmeajcMh6Id8PiZQnp6ukbGYvY5XyTEPL4s5XQhcSBcljbsrgLxQyXnUhaKc9Wnv2LOGIUdsdLl1oFVpfhD_jlkziMKyMb7NIR7EwAztuqO4QqmEzz_RLeC4nwt1ZeLlqChYdUEyNm8OjjPDRRKi0sh1vlyzqUmkxSpPUv9soJ5FNCjCfQqHCQlRzLv_V3EI8Vglk_BWH-cuR3feGuIfG_m5R5ZzgECDX2WEJweYkm"></div><div class="p-6 flex flex-col gap-2"><h4 class="font-bold text-on-surface">Market Expansion</h4><p class="text-sm text-on-surface-variant">Strategic Planning</p><div class="flex gap-2 mt-2"><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Strategy</span><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Growth</span></div></div></div><div class="group bg-surface-container/40 border border-white/10 rounded-xl overflow-hidden hover:bg-surface-container/60 transition-all"><div class="aspect-[4/3] overflow-hidden"><img alt="Investment Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDQ07RIPOZPurpbZ35e2p1SHxyJXpsyhnPgfPOAXtQs_PnYjAcYqlw6z0zp92uCf1UaXl-RsYq3w1Y4vI7uKGZ8AC4OKHijTR6HwEVxoXWEx6Ry_Vj-dtUuXkLgfQEf4Uj4ODJ5__2_F4WKrEkTULdxwZVzFd57gvSeRpdAyGrR875V6-L_kvD0P-OeSCsTCpDJTZTKK2aulIgZsLx10jypYr15yGH41rPsvan8zkAHULrDKdr25UH"></div><div class="p-6 flex flex-col gap-2"><h4 class="font-bold text-on-surface">Investment Strategy</h4><p class="text-sm text-on-surface-variant">Financial Advisory</p><div class="flex gap-2 mt-2"><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Finance</span><span class="text-[10px] bg-primary/10 text-primary px-2 py-1 rounded-full border border-primary/20">Investment</span></div></div></div></div>
+<div class="flex justify-center mt-8"><button class="px-8 py-3 bg-primary text-on-primary rounded-full font-body-sm font-bold hover:bg-primary-fixed transition-all hover:scale-105 shadow-lg shadow-primary/20">Visualizar todos</button></div><section id="contact" class="w-full py-20 flex flex-col items-center bg-background">
+  <div class="max-w-4xl w-full flex flex-col items-center text-center gap-6 mb-16">
+    <div class="flex flex-col gap-2">
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Contato</h2>
+      <p class="font-body-md text-on-surface-variant opacity-80 max-w-2xl mx-auto">Unindo minha bagagem profissional a novas competências para resolver problemas complexos. Seja para uma oportunidade de trabalho, uma colaboração ou para trocar ideias, será um prazer conversar</p>
+    </div>
+  </div>
+  <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl bg-surface-container/20 border border-white/5 hover:bg-surface-container/40 transition-all group">
+      <span class="material-symbols-outlined text-[32px] text-primary" data-icon="location_on">location_on</span>
+      <h4 class="font-label-code text-sm font-bold text-on-surface uppercase tracking-wider">Location</h4>
+      <p class="font-body-sm text-on-surface-variant">Manaus, AM</p>
+    </div>
+    <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl bg-surface-container/20 border border-white/5 hover:bg-surface-container/40 transition-all group">
+      <span class="material-symbols-outlined text-[32px] text-primary" data-icon="mail">mail</span>
+      <h4 class="font-label-code text-sm font-bold text-on-surface uppercase tracking-wider">Email</h4>
+      <p class="font-body-sm text-on-surface-variant">carlosllimab@gmail.com</p>
+    </div>
+    <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl bg-surface-container/20 border border-white/5 hover:bg-surface-container/40 transition-all group">
+      <span class="material-symbols-outlined text-[32px] text-primary" data-icon="call">call</span>
+      <h4 class="font-label-code text-sm font-bold text-on-surface uppercase tracking-wider">Phone</h4>
+      <p class="font-body-sm text-on-surface-variant">+55 92 9 94022242</p>
+    </div>
+    <div class="flex flex-col items-center text-center gap-3 p-6 rounded-2xl bg-surface-container/20 border border-white/5 hover:bg-surface-container/40 transition-all group lg:col-span-3 xl:col-span-1">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyvwmBmCf7SSTh0nxGzc8yOVpOoA5bJwxmXnbEvbE3E1dub94t1XbEzs0-4CMb_VcFEtlQ1-1JAval6c4TAlhALx33bieUySZvOMOKqHTdMaAhB40hnxN4zT1jjYtd6lRKE-0t5S2ror9gixVIaM8VA9L6PjnL6PMHJBVcGizZmiLAKkxoLWCQNtRXF0wrvNziFv2oxy5Ir-GsxFWFEcmATB__RvzLNiPKHkodnFxV8mcdfaiO8sXcPh31tkZU7Tpx6A" alt="LinkedIn" class="h-8 w-auto object-contain">
+      <h4 class="font-label-code text-sm font-bold text-on-surface uppercase tracking-wider">LINKEDIN</h4>
+      <p class="font-body-sm text-on-surface-variant break-all md:break-normal">linkedin.com/in/c.leandro</p>
+    </div>
+  </div>
+</section></section>
+<!-- Skills Section -->
+<!-- Ferramentas & Tecnologia Section -->
+</div>
+<!-- Footer (Shared Component) -->
+<footer class="w-full bg-surface dark:bg-surface border-t border-outline-variant mt-auto">
+</footer>
+</main>
+
+
+
+
+
+
+</body></html>
